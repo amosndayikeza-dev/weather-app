@@ -1,43 +1,39 @@
-# weather-app
+# Vue Weather App
 
-This template should help get you started developing with Vue 3 in Vite.
+A weather application built with **Vue 3 (Options API)** and **JavaScript**, using the free Open-Meteo API.
 
-## Recommended IDE Setup
+## Live Demo
+https://weather-app-1plh.vercel.app
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
+- Search any city worldwide
+- Current temperature, humidity, wind speed, and conditions
+- 5-day forecast
+- °C / °F unit toggle
+- Recent search history (persisted)
+- Favorite cities (persisted)
+- Loading, error, and success states
+- Responsive design
 
-## Recommended Browser Setup
+## Tech Stack
+- Vue 3 (Options API)
+- Vite
+- Open-Meteo API (geocoding + forecast)
+- Vercel (deployment)
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Project Structure
+- `src/App.vue` — root component, state, API orchestration
+- `src/components/SearchBar.vue` — city input + search button
+- `src/components/WeatherCard.vue` — weather display
+- `src/components/LoadingMessage.vue` — loading spinner
+- `src/services/weatherApi.js` — API calls
+- `src/utils/weatherCodes.js` — WMO code mapping
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+## Run Locally
+\`\`\`bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
+\`\`\`
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-#weather-app
+## Author
+Amos Ndayikeza
